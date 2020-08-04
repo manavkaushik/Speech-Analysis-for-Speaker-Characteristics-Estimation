@@ -270,6 +270,16 @@ I shall be updating this section as I go along with this project.
 
 </br>
 
+### Comparison of different Techniques/ Works:
+
+|S. No. | Paper Cited           | Dataset Used          | Methodology                      | UAR   | Accuracy/ Detection Rate |
+| ----- | --------------------- | --------------------- | -------------------------------- | ----- | ---------------------- |  
+| 1.    | Schuller et al. (2016)| ETS Corpus            | 16-bit signed integer PCM WAV + SVM | 47.5% | - |
+| 2.    | Choueiter et al. (2008)   | CLSU Foreign Accented English Corpus                 | GT + MMI + HLDA     | - | 32.7% |
+| 3.    | Ahmed et al. (2019)    | Speech Accent Archive                 | Spectrograms + CNNs       | - | 70.33% |
+| 4.    | Williams et al. (2013) | Speech Accent Archive                 | MFCC + LSTM     | - | 52.27% |
+| 5.    | Poorjam et al. (2015)   | ETS Corpus                 | MFCC + DNN + RNN     | 50.40% | 50.20% |
+
 ### Resources & Codes:
 I shall be updating this section as I go along with this project.
 
