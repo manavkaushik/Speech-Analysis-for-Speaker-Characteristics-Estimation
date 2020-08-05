@@ -116,7 +116,7 @@ I am citing some of the recent of works of literature that I have come across an
 |       |                       |                       |                                  | Female  | -   | 4.68    | 0.92                     |
 | 7.    | Bahari et al. (2012) | NIST SRE              | i-Vectors + SVR      | Male    | -      | 7.63     | -                     |
 |       |                       |                       |                                  | Female  | -   | 7.61    | -                       |
-| 8.    |Zazo et al. (2018) | NIST SRE              | MFCC + LSTMs      | Male    | -      | 7.29    | 0.48                    |
+| 8.    |Zazo et al. (2018) | NIST SRE              | MFCC + LSTMs      | Male    | -      | 7.79    | 0.48                    |
 |       |                       |                       |                                  | Female  | -   | 6.97    | 0.65                       |
 | 9.    |Sadjadi et al. (2016) | NIST SRE              |fMLLR + i-Vectors      | Male    | -      | 4.70    | 0.89                    |
 |       |                       |                       |                                  | Female  | -   | 4.70    | 0.91                       |
