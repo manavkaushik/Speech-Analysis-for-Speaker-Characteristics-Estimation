@@ -26,7 +26,7 @@
 ## Introduction:
 
 Hello everyone! </br>
-I, under the guidance of my thesis supervisor: [Prof. Chng Eng Siong](https://www.ntu.edu.sg/home/aseschng/intro1.html) (School of Computing, Nanyang Technological University Singapore), am compiling this repository with a sincere hope of benefitting the community from the same. </br>
+I, under the guidance of my thesis supervisor: [Prof. Chng Eng Siong](https://www.ntu.edu.sg/home/aseschng/intro1.html) (School of Computing, Nanyang Technological University Singapore) and Dr Van Tung Pham, am compiling this repository with a sincere hope of benefitting the community from the same. </br>
 This is a one-stop-repository for most of the recent works and developments in the domain of 'speech analysis for speaker characteristic recignition and profiling'. </br>
 I shall try to cover as much content as I can on the said topic including my own work. </br>
 
