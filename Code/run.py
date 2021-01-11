@@ -51,7 +51,7 @@ feat_arr_train,labels_train = shuffle(feat_arr_train,labels_train, random_state=
 es = EarlyStopping(monitor='val_loss', mode='min', verbose=1, patience=15)
 mc = ModelCheckpoint('best_model_wts.h5', monitor='val_loss', mode='min', save_best_only=True,save_weights = True, verbose=1)
 
-history = model.fit(np.array(feat_arr_train[:5000]), labels_train[:5000].astype(float), 
+history = model.fit(np.array(feat_arr_train), labels_train.astype(float), 
                     validation_data = (np.array(feat_arr_val), labels_val.astype(float)), epochs=200, batch_size=32, callbacks=[es, mc])
 
 model.load_weights('best_model_wts.h5')
