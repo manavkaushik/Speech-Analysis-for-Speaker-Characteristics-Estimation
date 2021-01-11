@@ -26,8 +26,8 @@ def attn_model():
             time_major=False, unroll=False)(inputs) 
 
     att, att_weight = attention()(lstm)
-    avg = AveragePooling1D(pool_size = 800)(att)
-    reshaped = Reshape((128,))(avg)
+    reshaped = Reshape((128,))(K.sum(att,axis=1))
+
 
     outputs = Dense(2, activation = 'relu')(reshaped)
 
