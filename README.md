@@ -8,17 +8,17 @@
   - [x] Recent Publications
   - [x] Datasets
   - [x] Comparison of different techniques
-  - [ ] Resources & Code
+  - [x] Resources & Code
 - **Height:**
   - [x] Recent Publications
   - [x] Datasets
   - [x] Comparison of different techniques
-  - [ ] Resources & Code
+  - [x] Resources & Code
 - **Accent:**
   - [x] Recent Publications
   - [x] Datasets
   - [x] Comparison of different techniques
-  - [ ] Resources & Code
+  - [x] Resources & Code
 - **Miscellaneous**
 
 </br></br></br>
