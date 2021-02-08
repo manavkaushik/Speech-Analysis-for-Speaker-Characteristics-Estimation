@@ -10,7 +10,7 @@ from keras.preprocessing.sequence import pad_sequences
 def data_gen_train():
   
   #os.chdir('../')
-  root_dir_train = 'Data/train/'
+  root_dir_train = 'Accent_Data/train/'
   print(os.getcwd())
   os.chdir(root_dir_train)
   print(os.getcwd())
@@ -58,7 +58,7 @@ def data_gen_test():
   
   os.chdir('../../')
   print('FOR TEST DIR..............')
-  root_dir_test = 'Data/test/'
+  root_dir_test = 'Accent_Data/test/'
   #print(os.getcwd())
   os.chdir(root_dir_test)
   print(os.getcwd())
@@ -105,7 +105,7 @@ def data_gen_test():
               
 def data_gen_val():
 
-    root_dir_val = 'Data/dev/'
+    root_dir_val = 'Accent_Data/dev/'
 
     os.chdir('../../')
     os.chdir(root_dir_val)
