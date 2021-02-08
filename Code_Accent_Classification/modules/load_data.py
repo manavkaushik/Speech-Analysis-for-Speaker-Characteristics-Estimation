@@ -14,7 +14,7 @@ def data_gen_train():
   print(os.getcwd())
   os.chdir(root_dir_train)
   print(os.getcwd())
-  for i in range(1,2):
+  for i in range(1,3):
       with ReadHelper("scp:" + "feats" + str(i) + ".scp") as reader:
           for key, numpy_array in reader:
               #ids_train.append(key.split('-')[1])
@@ -63,7 +63,7 @@ def data_gen_test():
   os.chdir(root_dir_test)
   print(os.getcwd())
 
-  for i in range(1,2):
+  for i in range(1,9):
       with ReadHelper("scp:" + "feats" + str(i) + ".scp") as reader:
           for key, numpy_array in reader:
               #ids_train.append(key.split('-')[1])
@@ -109,7 +109,7 @@ def data_gen_val():
 
     os.chdir('../../')
     os.chdir(root_dir_val)
-    for i in range(1,2):
+    for i in range(1,9):
         with ReadHelper("scp:" + "feats" + str(i) + ".scp") as reader:
             for key, numpy_array in reader:
                 #ids_train.append(key.split('-')[1])
