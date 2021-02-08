@@ -1,9 +1,5 @@
 import modules
-# import tensorflow as tf
-# import keras
-# from sklearn.utils import shuffle
-# from keras.callbacks import EarlyStopping, ModelCheckpoint
-# import numpy as np
+
 
 
 # SELECTING HYPERPARAMETERS #
@@ -17,11 +13,11 @@ label_smoothing = 0.0       ## Label smoothing factor for Categorical_Crossentro
 # SELECTING THE MODEL #
 # Choose any one of the following model and comment out the others:
 
-# model = modules.bilstm_cross_attn_focal_model()
+model = modules.bilstm_cross_attn_focal_model()
 # model = modules.lstm_att_model()
 # model = modules.lstm_cross_att_model()
 # model = modules.lstm_cross_att_multitask_model()
-model = modules.lstm_cross_att_focal_multitask_model()
+# model = modules.lstm_cross_att_focal_multitask_model()
 # model = modules.lstm_cross_att_gender_pretrain_model()
 
 
