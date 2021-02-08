@@ -32,7 +32,7 @@ def data_gen_train_gender():
     print(os.getcwd())
     os.chdir(root_dir_train)
     print(os.getcwd())
-    for i in range(1,2):
+    for i in range(1,33):
         with ReadHelper("scp:" + "feats" + str(i) + ".scp") as reader:
             for key, numpy_array in reader:
                 #ids_train.append(key.split('-')[1])
@@ -81,7 +81,7 @@ def data_gen_test_gender():
   os.chdir(root_dir_test)
   print(os.getcwd())
 
-  for i in range(1,2):
+  for i in range(1,9):
       with ReadHelper("scp:" + "feats" + str(i) + ".scp") as reader:
           for key, numpy_array in reader:
               #ids_train.append(key.split('-')[1])
@@ -143,7 +143,7 @@ def data_gen_val_gender():
     f.close()
 
     os.chdir(root_dir_val)
-    for i in range(1,2):
+    for i in range(1,9):
         with ReadHelper("scp:" + "feats" + str(i) + ".scp") as reader:
             for key, numpy_array in reader:
                 #ids_train.append(key.split('-')[1])
@@ -216,7 +216,7 @@ def data_gen_train_0():
     f.close()
   
   
-    for i in range(1,2):
+    for i in range(1,33):
         with ReadHelper("scp:" + "feats" + str(i) + ".scp") as reader:
             for key, numpy_array in reader:
                 #ids_train.append(key.split('-')[1])
@@ -283,7 +283,7 @@ def data_gen_train_1():
         
     f.close()
 
-    for i in range(1,2):
+    for i in range(1,33):
         with ReadHelper("scp:" + "feats" + str(i) + ".scp") as reader:
             for key, numpy_array in reader:
                 #ids_train.append(key.split('-')[1])
@@ -340,7 +340,7 @@ def data_gen_test_1():
     file_to_read = open("test_dict", "rb")
     test_dict = pickle.load(file_to_read)
 
-    for i in range(1,2):
+    for i in range(1,9):
         with ReadHelper("scp:" + "feats" + str(i) + ".scp") as reader:
             for key, numpy_array in reader:
                 #ids_train.append(key.split('-')[1])
@@ -396,7 +396,7 @@ def data_gen_test_0():
     file_to_read = open("test_dict", "rb")
     test_dict = pickle.load(file_to_read)
 
-    for i in range(1,2):
+    for i in range(1,9):
         with ReadHelper("scp:" + "feats" + str(i) + ".scp") as reader:
             for key, numpy_array in reader:
                 #ids_train.append(key.split('-')[1])
@@ -459,7 +459,7 @@ def data_gen_val_0():
     f.close() 
 
     
-    for i in range(1,2):
+    for i in range(1,9):
         with ReadHelper("scp:" + "feats" + str(i) + ".scp") as reader:
             for key, numpy_array in reader:
                 #ids_train.append(key.split('-')[1])
@@ -527,7 +527,7 @@ def data_gen_val_1():
             
     f.close() 
 
-    for i in range(1,2):
+    for i in range(1,9):
         with ReadHelper("scp:" + "feats" + str(i) + ".scp") as reader:
             for key, numpy_array in reader:
                 #ids_train.append(key.split('-')[1])
