@@ -119,12 +119,12 @@ def lstm_cross_att_gender_pretrain_model():
 
     model.compile(optimizer='adam', loss= 'categorical_crossentropy', metrics = ['accuracy'])
 
-    es = EarlyStopping(monitor='val_loss', mode='min', verbose=5, patience=4)
+    es = EarlyStopping(monitor='val_loss', mode='min', verbose=5, patience=20)
     mc = ModelCheckpoint('../../lstm_cross_att_pretrain_model_wts.h5', monitor='val_loss', mode='min', save_best_only=True, save_weights = True, verbose=1)
     #tb_callback = tf.keras.callbacks.TensorBoard('./logs', update_freq = 1)
         
-    model.load_weights('Data/gender_pre_trained_model.h5', by_name = True)
-    hist = model.fit(ds_series_train_batch, validation_data = ds_series_val_batch, epochs=1, callbacks=[es, mc])
+    model.load_weights('Accent_Data/gender_pre_trained_model.h5', by_name = True)
+    hist = model.fit(ds_series_train_batch, validation_data = ds_series_val_batch, epochs=100, callbacks=[es, mc])
 
     ############################ TESTING THE MODEL ######################################
 
@@ -138,10 +138,10 @@ def lstm_cross_att_gender_pretrain_model():
 
     ############################################ MODEL FINE TUNING for Gender_1 ####################################################
 
-    #os.chdir('../../')
+    os.chdir('../../')
     mc_1 = ModelCheckpoint('../../lstm_cross_att_pretrain_model_wts_1.h5', monitor='val_loss', mode='min', save_best_only=True, save_weights = True, verbose=1)
     model.load_weights('lstm_cross_att_pretrain_model_wts.h5', by_name=True)  
-    hist_1 = model.fit(ds_series_train_batch_1, validation_data = ds_series_val_batch_1, epochs=1, callbacks=[es, mc_1])
+    hist_1 = model.fit(ds_series_train_batch_1, validation_data = ds_series_val_batch_1, epochs=100, callbacks=[es, mc_1])
 
     print()
     print()
@@ -157,7 +157,7 @@ def lstm_cross_att_gender_pretrain_model():
     os.chdir('../../')
     mc_0 = ModelCheckpoint('../../lstm_cross_att_pretrain_model_wts_0.h5', monitor='val_loss', mode='min', save_best_only=True, save_weights = True, verbose=1)
     model.load_weights('lstm_cross_att_pretrain_model_wts.h5', by_name=True)  
-    hist_0 = model.fit(ds_series_train_batch_0, validation_data = ds_series_val_batch_0, epochs=1, callbacks=[es, mc_0])
+    hist_0 = model.fit(ds_series_train_batch_0, validation_data = ds_series_val_batch_0, epochs=100, callbacks=[es, mc_0])
 
     print()
     print()
