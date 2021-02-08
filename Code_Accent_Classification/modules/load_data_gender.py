@@ -12,7 +12,7 @@ def data_gen_train_gender():
 
   ########### Training Data Gender Labels ################
 
-    root_dir_train = 'Data/train/'
+    root_dir_train = 'Accent_Data/train/'
     dict_gender_train = {}
     count = 0
 
@@ -76,7 +76,7 @@ def data_gen_test_gender():
   
   os.chdir('../../')
   print('FOR TEST DIR..............')
-  root_dir_test = 'Data/test/'
+  root_dir_test = 'Accent_Data/test/'
   #print(os.getcwd())
   os.chdir(root_dir_test)
   print(os.getcwd())
@@ -126,7 +126,7 @@ def data_gen_val_gender():
     ########### Validation Data Gender Labels ################
 
     os.chdir('../../')
-    root_dir_val = 'Data/dev/'
+    root_dir_val = 'Accent_Data/dev/'
     dict_gender_dev = {}
     count = 0
 
@@ -197,7 +197,7 @@ def data_gen_val_gender():
 
 def data_gen_train_0():
   
-    root_dir_train = 'Data/train/'
+    root_dir_train = 'Accent_Data/train/'
     os.chdir(root_dir_train)
 
     dict_gender_train = {}
@@ -265,7 +265,7 @@ def data_gen_train_0():
 
 def data_gen_train_1():
   
-    root_dir_train = 'Data/train/'
+    root_dir_train = 'Accent_Data/train/'
     os.chdir(root_dir_train)
     #print(os.getcwd())
     dict_gender_train = {}
@@ -331,7 +331,7 @@ def data_gen_train_1():
 def data_gen_test_1():
   
     os.chdir('../../')
-    root_dir_test = 'Data/test/'
+    root_dir_test = 'Accent_Data/test/'
     print('FOR TEST DIR..............')
     print(os.getcwd())
     os.chdir(root_dir_test)
@@ -388,7 +388,7 @@ def data_gen_test_1():
 def data_gen_test_0():
   
     os.chdir('../../')
-    root_dir_test = 'Data/test/'
+    root_dir_test = 'Accent_Data/test/'
     print('FOR TEST DIR..............')
     print(os.getcwd())
     os.chdir(root_dir_test)
@@ -441,7 +441,7 @@ def data_gen_test_0():
       
 def data_gen_val_0():
 
-    root_dir_val = 'Data/dev/'
+    root_dir_val = 'Accent_Data/dev/'
     os.chdir('../../')
     os.chdir(root_dir_val)
     dict_gender_dev = {}
@@ -509,7 +509,7 @@ def data_gen_val_0():
         
 def data_gen_val_1():
 
-    root_dir_val = 'Data/dev/'
+    root_dir_val = 'Accent_Data/dev/'
     os.chdir('../../')
     os.chdir(root_dir_val)
 
