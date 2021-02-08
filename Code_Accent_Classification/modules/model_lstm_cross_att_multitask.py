@@ -70,12 +70,12 @@ def lstm_cross_att_multitask_model():
     model.compile(optimizer='adam', loss={'accent': 'categorical_crossentropy', 'gender': 'binary_crossentropy'}, metrics = {'accent': 'accuracy'}, 
                 loss_weights = [0.7, 0.3])
 
-    es = EarlyStopping(monitor='val_loss', mode='min', verbose=5, patience=4)
+    es = EarlyStopping(monitor='val_loss', mode='min', verbose=5, patience=20)
     mc = ModelCheckpoint('../../lstm_cross_att_multitask_model_wts.h5', monitor='val_loss', mode='min', save_best_only=True, save_weights = True, verbose=1)
     #tb_callback = tf.keras.callbacks.TensorBoard('./logs', update_freq = 1)
         
 
-    hist = model.fit(ds_series_train_batch, validation_data = ds_series_val_batch, epochs=1, callbacks=[es, mc])
+    hist = model.fit(ds_series_train_batch, validation_data = ds_series_val_batch, epochs=100, callbacks=[es, mc])
 
     ############################ TESTING THE MODEL ######################################
 
