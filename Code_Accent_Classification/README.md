@@ -2,7 +2,9 @@
 
 ## Overview of the Directory
 
-This folder contains the code implementation of different models for AGE and HEIGHT estimation for 'Accented speech recognition workshop data’ from DataTang for INTERSPEECH 2020 </br>
+This folder contains the code implementation of different models for Accent Recognition using the dataset of 'Accented speech recognition workshop data’ from DataTang for INTERSPEECH 2020 </br>
+
+Please download the dataset from: [Accent_Data](https://drive.google.com/file/d/1WfnSpypRIKAEkj1q7h1gZ0LnCX7CvDXi/view?usp=sharing)
 
 The directory also contains augmented features for Training, Validation and Testing Sets. </br>
 Number of Accents: 8 (each ~20 hrs)
@@ -27,14 +29,13 @@ We have used CMVN normalization as a pre-processing step on the input features.
 
 As of now, the following six models have been added in the package here:</br>
 
-```
-- LSTM + Attention Model
-- LSTM + Cross Attention (proposed by us) Model
-- BiLSTM + Cross Attention + Focal Loss Model.
-- LSTM + Cross Attention + Multi-Task Model (Accent & Gender prediction)
-- LSTM + Cross Attention + Multi-Task + Focal Loss Model (Accent & Gender prediction)
-- LSTM + Cross Attention + Gender_Pre_Training Model
-```
+
+- `LSTM + Attention Model`
+- `LSTM + Cross Attention (proposed by us) Model`
+- `BiLSTM + Cross Attention + Focal Loss Model`
+- `LSTM + Cross Attention + Multi-Task Model (Accent & Gender prediction)`
+- `LSTM + Cross Attention + Multi-Task + Focal Loss Model (Accent & Gender prediction)`
+- `LSTM + Cross Attention + Gender_Pre_Training Model`
 </br></br>
 
 ## Running the Package:
@@ -51,9 +52,22 @@ pickle
 ```
 </br></br>
 
-2. Clone or Download this directory (i.e. Code_Accent_Classification). </br></br>
+2. Clone or Download this directory (i.e. `Code_Accent_Classification`). </br></br>
 
-3. Excecute the `run.py` file (make sure that your current working directory is 'Code_Accent_Classification'):
+3. Download the dataset from the link given above. Unzip the dataset in the `Code_Accent_Classification` directory. 
+Your directory should look like this: </br>
+```
+/Code_Accent_Classification/
+...
+   Accent_Data
+   modules
+   README.md
+   run.py
+```
+  
+  </br></br>
+
+4. Excecute the `run.py` file (make sure that your current working directory is `Code_Accent_Classification`):
 ```
 $ python run.py
 ```
