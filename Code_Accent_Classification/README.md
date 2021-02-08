@@ -4,7 +4,7 @@
 
 This folder contains the code implementation of different models for Accent Recognition using the dataset of 'Accented speech recognition workshop data’ from DataTang for INTERSPEECH 2020 </br>
 
-Please download the dataset from: [Accent_Data](https://drive.google.com/file/d/1WfnSpypRIKAEkj1q7h1gZ0LnCX7CvDXi/view?usp=sharing)
+Please download the dataset from: [Accent_Data](https://drive.google.com/file/d/1u-MnUn4w0Pu-w7PvWPVQs8QHwH_G-uJu/view?usp=sharing)
 
 The directory also contains augmented features for Training, Validation and Testing Sets. </br>
 Number of Accents: 8 (each ~20 hrs)
@@ -78,3 +78,4 @@ $ python run.py
 ## For Further Details:
 
 For gaining further insight of our work, you may refer the following report compiled by us on this topic:
+[Report](https://drive.google.com/file/d/1hcVhcThpI32Fr44aavsi0NXJ9N2NpxGF/view?usp=sharing)
