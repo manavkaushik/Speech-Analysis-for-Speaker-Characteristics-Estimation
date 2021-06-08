@@ -105,8 +105,8 @@ used to gauge the performance of the model on the test_set for height estimation
 
 |S. No. | Model                 | Features              | Loss                             | Gender  | Height RMSE   | Height MAE  |
 | ----- | --------------------- | --------------------- | -------------------------------- | ------- | ------------- | ----------- |
-| 1.    | LSTM + Cross_att      | Filter Bank & Pitch   | MSE + Triplet Loss               | Male    | 7.14          | 5.54        |
-|       | SingleTask            |                       |                                  | Female  | 6.48          | 4.95        |
+| 1.    | LSTM + Cross_att      | Filter Bank & Pitch   | MSE + Triplet Loss               | Male    | 7.14          | 5.50        |
+|       | SingleTask            |                       |                                  | Female  | 6.24          | 4.95        |
 
 </br></br>
 
@@ -126,7 +126,7 @@ used to gauge the performance of the model on the test_set for height estimation
 
 |S. No. | Model                 | Features              | Loss                             | Gender  | Height RMSE   | Height MAE  |
 | ----- | --------------------- | --------------------- | -------------------------------- | ------- | ------------- | ----------- |
-| 1.    | LSTM + Cross_att      | Filter Bank & Pitch   | MSE + Center Loss                | Male    | 7.14          | 5.54        |
-|       | SingleTask            |                       |                                  | Female  | 6.48          | 4.95        |
+| 1.    | LSTM + Cross_att      | Filter Bank & Pitch   | MSE + Center Loss                | Male    | 6.96          | 5.27        |
+|       | SingleTask            |                       |                                  | Female  | 6.47          | 5.18        |
 
 </br></br>
