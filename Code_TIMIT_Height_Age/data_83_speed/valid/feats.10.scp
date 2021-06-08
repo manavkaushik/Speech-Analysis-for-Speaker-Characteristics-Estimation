@@ -1,0 +1,12 @@
+MDCM0_SX40 /home2/tungpham/espnet/esp_transformer/espnet-master/egs/timit/asr1_Tung_fbank80/dump/valid/deltafalse/feats.10.ark:11
+MDCM0_SX400 /home2/tungpham/espnet/esp_transformer/espnet-master/egs/timit/asr1_Tung_fbank80/dump/valid/deltafalse/feats.10.ark:23616
+MDPB0_SA1 /home2/tungpham/espnet/esp_transformer/espnet-master/egs/timit/asr1_Tung_fbank80/dump/valid/deltafalse/feats.10.ark:46804
+MDPB0_SA2 /home2/tungpham/espnet/esp_transformer/espnet-master/egs/timit/asr1_Tung_fbank80/dump/valid/deltafalse/feats.10.ark:74889
+MDPB0_SI1760 /home2/tungpham/espnet/esp_transformer/espnet-master/egs/timit/asr1_Tung_fbank80/dump/valid/deltafalse/feats.10.ark:96420
+MDPB0_SI2126 /home2/tungpham/espnet/esp_transformer/espnet-master/egs/timit/asr1_Tung_fbank80/dump/valid/deltafalse/feats.10.ark:134053
+MDPB0_SI866 /home2/tungpham/espnet/esp_transformer/espnet-master/egs/timit/asr1_Tung_fbank80/dump/valid/deltafalse/feats.10.ark:161642
+MDPB0_SX146 /home2/tungpham/espnet/esp_transformer/espnet-master/egs/timit/asr1_Tung_fbank80/dump/valid/deltafalse/feats.10.ark:199689
+MDPB0_SX236 /home2/tungpham/espnet/esp_transformer/espnet-master/egs/timit/asr1_Tung_fbank80/dump/valid/deltafalse/feats.10.ark:222547
+MDPB0_SX326 /home2/tungpham/espnet/esp_transformer/espnet-master/egs/timit/asr1_Tung_fbank80/dump/valid/deltafalse/feats.10.ark:246152
+MDPB0_SX416 /home2/tungpham/espnet/esp_transformer/espnet-master/egs/timit/asr1_Tung_fbank80/dump/valid/deltafalse/feats.10.ark:268263
+MDPB0_SX56 /home2/tungpham/espnet/esp_transformer/espnet-master/egs/timit/asr1_Tung_fbank80/dump/valid/deltafalse/feats.10.ark:289958
