@@ -30,7 +30,7 @@ if __name__ == '__main__':
         max_epochs = 100,                 # Max Number of Epochs to run the model
         n_features = 84,                # Number of Features per timeframe (84 for this experiment: 80 FBank + 3 Pitch + 1 Gender)
         hidden_size = 64,               # Number of Hidden Units of LSTM
-        num_layers = 2,                 # Number of LSTM Layers
+        num_layers = 1,                 # Number of LSTM Layers
         dropout = 0.2,                  # Dropout for LSTM and Dense Layer
         learning_rate = 0.001,          # Learning Rate
         output_size = 1,                # Number of Outputs (1 for height estimation)
