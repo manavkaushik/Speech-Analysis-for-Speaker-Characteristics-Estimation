@@ -19,7 +19,7 @@ Moreover, we use 3 data augmentations for our data:
 `Mean Squared Error (MSE)` loss and `Adam` optimizer. We use a patience of 10 epochs before early stopping the model based on Validation Loss. Finally, `MSE` and `MAE` metrics are used to gauge the performance of the model on the `test_set` for height estimation. The `batch_size` used is 32.
 
 - **Model Architecture**: </br>
-<img src="/Code_TIMIT_Height_Age/Imgs/height_mse.png" width="300">
+<img src="/Height_Estimation_TIMIT/imgs/height_mse.png" width="300">
 
 - **Results**: </br>
 
@@ -38,7 +38,7 @@ Moreover, we use 3 data augmentations for our data:
 used to gauge the performance of the model on the `test_set` for height estimation. The `batch_size` used is 32.
 
 - **Model Architecture**: </br>
-<img src="/Code_TIMIT_Height_Age/Imgs/height_mae.png" width="300">
+<img src="/Height_Estimation_TIMIT/imgs/height_mae.png" width="300">
 
 - **Results**: </br>
 
@@ -58,7 +58,7 @@ We use a patience of 10 epochs before early stopping the model based on Validati
 used to gauge the performance of the model on the `test_set` for height estimation. The `batch_size` used is of 32 samples.
 
 - **Model Architecture**: </br>
-<img src="/Code_TIMIT_Height_Age/Imgs/height_age_mse.png" width="500">
+<img src="/Height_Estimation_TIMIT/imgs/height_age_mse.png" width="500">
 
 - **Results**: </br>
 
@@ -78,7 +78,7 @@ We use a patience of 10 epochs before early stopping the model based on Validati
 used to gauge the performance of the model on the test_set for height estimation. The `batch_size` used is of 32 samples.
 
 - **Model Architecture**: </br>
-<img src="/Code_TIMIT_Height_Age/Imgs/height_age_mae.png" width="500">
+<img src="/Height_Estimation_TIMIT/imgs/height_age_mae.png" width="500">
 
 - **Results**: </br>
 
@@ -99,7 +99,7 @@ We use a patience of 10 epochs before early stopping the model based on Validati
 used to gauge the performance of the model on the test_set for height estimation. The `batch_size` used is of 32 samples.
 
 - **Model Architecture**: </br>
-<img src="/Code_TIMIT_Height_Age/Imgs/height_triplet.png" width="400">
+<img src="/Height_Estimation_TIMIT/imgs/height_triplet.png" width="400">
 
 - **Results**: </br>
 
@@ -120,7 +120,7 @@ We use a patience of 10 epochs before early stopping the model based on Validati
 used to gauge the performance of the model on the test_set for height estimation. The `batch_size` used is of 32 samples.
 
 - **Model Architecture**: </br>
-<img src="/Code_TIMIT_Height_Age/Imgs/height_center.png" width="400">
+<img src="/Height_Estimation_TIMIT/imgs/height_center.png" width="400">
 
 - **Results**: </br>
 
