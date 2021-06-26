@@ -28,10 +28,10 @@ if __name__ == '__main__':
         batch_size = 32,                # Number of samples in each batch
         criterion_ht = nn.MSELoss(),    # Losses of BackProp
         criterion_tl = nn.TripletMarginLoss(),    # Losses of BackProp
-        max_epochs = 1,                 # Max Number of Epochs to run the model
+        max_epochs = 100,                 # Max Number of Epochs to run the model
         n_features = 84,                # Number of Features per timeframe (84 for this experiment: 80 FBank + 3 Pitch + 1 Gender)
         hidden_size = 64,               # Number of Hidden Units of LSTM
-        num_layers = 2,                 # Number of LSTM Layers
+        num_layers = 1,                 # Number of LSTM Layers
         dropout = 0.2,                  # Dropout for LSTM and Dense Layer
         learning_rate = 0.001,          # Learning Rate
         output_size = 1,                # Number of Outputs (1 for height estimation)
@@ -46,7 +46,7 @@ if __name__ == '__main__':
     trainer = Trainer(
         max_epochs=params['max_epochs'],
         logger=csv_logger,               # Logging all the losses, epochs and steps
-        gpus= 0,                         # You may change the number of GPUs as per availability 
+        gpus= 1,                         # You may change the number of GPUs as per availability 
         #row_log_interval=1,
         progress_bar_refresh_rate=100,   # Number of Epochs after progress is shown regularly
         callbacks=[EarlyStopping(monitor='val_loss', patience= params['early_stop_patience'], mode='min')]  # Early Stopping Callback
@@ -88,8 +88,8 @@ if __name__ == '__main__':
     err_mae_female = mae_female.compute()
     err_mse_male = mse_male.compute()
     err_mae_male = mae_male.compute()
-    print(f"MSE Height on all Female data: {err_mse_female}")
+    print(f"RMSE Height on all Female data: {np.sqrt(err_mse_female.cpu().numpy())}")
     print(f"MAE Height on all Female data: {err_mae_female}")
-    print(f"MSE Height on all Male data: {err_mse_male}")
+    print(f"RMSE Height on all Male data: {np.sqrt(err_mse_male.cpu().numpy())}")
     print(f"MAE Height on all Male data: {err_mae_male}")
     print()
