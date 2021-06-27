@@ -99,11 +99,13 @@ used to gauge the performance of the model on the test_set for age estimation. T
 
 ## Requirements:
 
+```
 - numpy
 - pandas
 - torch
 - pytorch_lightning
 - torchmetrics
+```
 
 ## 3 Steps to run the model:
 
