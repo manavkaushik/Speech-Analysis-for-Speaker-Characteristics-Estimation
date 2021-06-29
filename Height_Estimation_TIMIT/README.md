@@ -25,8 +25,8 @@ Moreover, we use 3 data augmentations for our data:
 
 |S. No. | Model                 | Features              | Loss                             | Gender  | Height RMSE   | Height MAE  |
 | ----- | --------------------- | --------------------- | -------------------------------- | ------- | ------------- | ----------- |
-| 1.    | LSTM + Cross_att      | Filter Bank & Pitch   | Mean Squared Error (MSE)         | Male    | 7.06          | 5.44        |
-|       | SingleTask            |                       |                                  | Female  | 6.70          | 5.23        |
+| 1.    | LSTM + Cross_att      | Filter Bank & Pitch   | Mean Squared Error (MSE)         | Male    | 6.98          | 5.30        |
+|       | SingleTask            |                       |                                  | Female  | 6.50          | 5.22        |
  
 </br></br>
  
@@ -64,8 +64,8 @@ used to gauge the performance of the model on the `test_set` for height estimati
 
 |S. No. | Model                 | Features              | Loss                             | Gender  | Height RMSE   | Height MAE  |
 | ----- | --------------------- | --------------------- | -------------------------------- | ------- | ------------- | ----------- |
-| 1.    | LSTM + Cross_att      | Filter Bank & Pitch   | Mean Squared Error (MSE)         | Male    | 6.96          | 5.26        |
-|       | MultiTask             |                       |                                  | Female  | 6.53          | 5.22        |
+| 1.    | LSTM + Cross_att      | Filter Bank & Pitch   | Mean Squared Error (MSE)         | Male    | 6.95          | 5.26        |
+|       | MultiTask             |                       |                                  | Female  | 6.44          | 5.15        |
 
 </br></br>
 
@@ -105,7 +105,7 @@ used to gauge the performance of the model on the test_set for height estimation
 
 |S. No. | Model                 | Features              | Loss                             | Gender  | Height RMSE   | Height MAE  |
 | ----- | --------------------- | --------------------- | -------------------------------- | ------- | ------------- | ----------- |
-| 1.    | LSTM + Cross_att      | Filter Bank & Pitch   | MSE + Triplet Loss               | Male    | 7.14          | 5.50        |
+| 1.    | LSTM + Cross_att      | Filter Bank & Pitch   | MSE + Triplet Loss               | Male    | 6.92          | 5.26        |
 |       | SingleTask            |                       |                                  | Female  | 6.24          | 4.95        |
 
 </br></br>
@@ -130,3 +130,31 @@ used to gauge the performance of the model on the test_set for height estimation
 |       | SingleTask            |                       |                                  | Female  | 6.47          | 5.18        |
 
 </br></br>
+
+# How to reproduce the models?
+
+## Requirements:
+
+```
+- numpy
+- pandas
+- torch
+- pytorch_lightning
+- torchmetrics
+```
+
+## 3 Steps to run the model:
+
+1. Clone or download this repository into your system.
+
+2. Change your current working directory to `Height_Estimation_TIMIT`. 
+
+3. Run the model_run file which you wish to reproduce. For example: </br>
+```
+$ python height_triplet_mse_run.py
+```
+
+## Other instructions:
+
+- You may change the hyper-parameters such as the `batch_size`, `max_epochs`, `early_stopping_patience`, `learning_rate`, `num_layers`, `loss_criterion`, etc. in the run.py file of any model.
+- Please note that the if you are not using a GPU for processing, change the hyper-parameter of `gpu` in the `trainer` function (in the run.py files) to `0`.
