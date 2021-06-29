@@ -28,7 +28,7 @@ Moreover, we use 3 data augmentations for our data:
 | 1.    | LSTM + Cross_att (SingleTask)      | Filter Bank & Pitch   | Mean Squared Error (MSE)         | Male    | 7.80       | 5.52     |
 |       |                                    |                       |                                  | Female  | 8.70       | 6.05     |
 | 2.    | LSTM + Cross_att (SingleTask)      | Filter Bank & Pitch   | Mean Asbsolute Error (MAE)       | Male    | 8.15       | 5.39     |
-|       |                                    |                       |                                  | Female  | 9.63       | 6.30     |
+|       |                                    |                       |                                  | Female  | 9.23       | 6.30     |
 
 </br></br>
 
@@ -47,8 +47,8 @@ used to gauge the performance of the model on the `test_set` for age estimation.
 
 |S. No. | Model                 | Features              | Loss                             | Gender  | Age RMSE   | Age MAE  |
 | ----- | --------------------- | --------------------- | -------------------------------- | ------- | ---------- | -------- |
-| 1.    | LSTM + Cross_att      | Filter Bank & Pitch   | Mean Squared Error (MSE)         | Male    | 7.90       | 5.62     |
-|       | MultiTask             |                       |                                  | Female  | 8.10       | 5.91     |
+| 1.    | LSTM + Cross_att      | Filter Bank & Pitch   | Mean Squared Error (MSE)         | Male    | 7.71       | 5.40     |
+|       | MultiTask             |                       |                                  | Female  | 8.10       | 5.81     |
 
 </br></br>
 
